@@ -111,8 +111,10 @@ func main() {
 	args = []string{
 		"/usr/sbin/vmctl",
 		"start", "-c", "-L", "-d", driveFile,
-		*name,
-	}
+	      }
+
+	args = append(args, flag.Args()...)
+	args = append(args, *name)
 
 	log.Println(args)
 
