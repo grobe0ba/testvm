@@ -48,7 +48,7 @@ func main() {
 
 	seed.MustInit()
 
-	baseImage = flag.String("base", "openbsd66_amd64-base.qcow2", "Base image for VM")
+	baseImage = flag.String("base", "openbsd66_amd64-base", "Base image for VM")
 	name = flag.String("name", fmt.Sprintf("testvm-%d", rand.Uint32()), "Name for VM")
 	kill = flag.Bool("kill", false, "Kill VM")
 	flag.Parse()
@@ -95,7 +95,7 @@ func main() {
 
 	args = []string{
 		"/usr/sbin/vmctl",
-		"create", "-b", path.Join("/usr/local/vm", *baseImage),
+		"create", "-b", path.Join("/usr/local/vm", *baseImage + ".qcow2"),
 		driveFile,
 	}
 
