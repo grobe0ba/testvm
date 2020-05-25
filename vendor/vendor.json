@@ -1,0 +1,25 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "0dGjmTF7ZVaoaSt6OSRGOBnShMk=",
+			"path": "github.com/go-pipe/pipe",
+			"revision": "3c2ca4d525447ec8b2f606a6974f9c9f40831f26",
+			"revisionTime": "2014-04-14T04:15:02Z"
+		},
+		{
+			"checksumSHA1": "YgDM4nO5oTH0ylhyAHcsREbZmeA=",
+			"path": "github.com/mitchellh/go-homedir",
+			"revision": "af06845cf3004701891bf4fdb884bfe4920b3727",
+			"revisionTime": "2019-01-27T04:21:35Z"
+		},
+		{
+			"checksumSHA1": "tnMZLo/kR9Kqx6GtmWwowtTLlA8=",
+			"path": "github.com/sean-/seed",
+			"revision": "e2103e2c35297fb7e17febb81e49b312087a2372",
+			"revisionTime": "2017-03-13T16:33:22Z"
+		}
+	],
+	"rootPath": "github.com/grobe0ba/testvm"
+}
